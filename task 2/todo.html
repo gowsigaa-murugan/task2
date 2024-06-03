@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <div class="todo-container">
+        <h1>Todo List </h1>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Add new task">
+            <button id="addTaskButton">+</button>
+        </div>
+        <ul id="taskList"></ul>
+    </div>
+
+    <!-- Edit Modal -->
+    <div id="editModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <input type="text" id="editTaskInput">
+            <button id="saveTaskButton">Save</button>
+        </div>
+    </div>
+
+    <!-- Delete Confirmation Modal -->
+    <div id="deleteModal" class="modal">
+        <div class="modal-content">
+            <p>Are you sure you want to delete the task?</p>
+            <button id="confirmDeleteButton">Yes</button>
+            <button id="cancelDeleteButton">No</button>
+        </div>
+    </div>
+
+    <script src="todo.js"></script>
+</body>
+</html>
